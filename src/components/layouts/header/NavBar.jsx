@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Navbar } from "../../../constants/Navbar";
 import MenuIcon from "./MenuIcon";
-import styles from "../../../styles";
 import { motion } from "framer-motion";
 import { navVariants } from "../../utils/motion";
 

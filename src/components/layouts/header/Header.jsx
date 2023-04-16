@@ -14,26 +14,21 @@ function Header() {
   }
 
   return (
-    <section className="mx-auto relative h-screen md:min-h-[920px] mb-20">
+    <section className="mx-auto relative md:h-screen min-h-[800px] sm:min-h-[920px] mb-20">
       <div
-        className="bg-gray-900 bg-cover bg-center w-full h-[900px] absolute inset-0 transition-transform ease-in-out"
+        className="bg-gray-900 bg-cover bg-center w-full h-[800px] sm:h-[900px] absolute inset-0 transition-transform ease-in-out"
         style={{ backgroundImage: `url(${IMAGE_URLS[imageIndex].url})` }}
       />
       <section className="absolute p-5 w-full">
         <NavBar />
       </section>
       <div
-        className="border border-white absolute bottom-[88px] left-32  cursor-pointer flex justify-center items-center"
+        className="border border-white absolute bottom-[88px] left-6 sm:left-16 md:left-32  cursor-pointer flex justify-center items-center"
         style={{ width: "8rem", height: "8rem" }}
         onClick={handleButtonClick}
       >
         <div className="relative w-24 h-24 mx-auto my-auto">
-          <div
-            className="progress-bar absolute top-0 left-0 w-full h-full rounded-md"
-            style={{
-              backgroundImage: `linear-gradient(to right, #1a202c, transparent)`,
-            }}
-          />
+          <div className="progress-bar absolute top-0 left-0 w-full h-full rounded-md" />
           <div
             className="bg-gray-900 bg-cover bg-center w-full h-full absolute inset-0"
             style={{
@@ -46,13 +41,13 @@ function Header() {
             Next
           </div>
         </div>
-        <div className="absolute text-white flex w-[174px] justify-between items-center left-48">
+        <div className="absolute text-white flex w-32 sm:w-[174px] justify-between items-center left-36 sm:left-48">
           <p>0{imageIndex + 1}</p>
-          <div className="w-[103px] border-t border-white"></div>
+          <div className="w-16 sm:w-[103px] border-t border-white"></div>
           <p>0{IMAGE_URLS.length}</p>
         </div>
       </div>
-      <div className="absolute top-1/3 text-white max-w-xl left-32">
+      <div className="absolute top-[40%] md:top-1/3 text-white max-w-xs xs:max-w-sm md:max-w-xl left-6 sm:left-16 md:left-32">
         <section className="relative z-10">
           <motion.div
             variants={staggerContainer}

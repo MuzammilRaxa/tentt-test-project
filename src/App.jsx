@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Header from "./components/layouts/header/Header";
-import About from "./components/layouts/products/ProductContent";
+import ProductSection from "./components/layouts/products/ProductContent";
 
 function App() {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Header />
-      <About />
+      <ProductSection />
     </div>
   );
 }

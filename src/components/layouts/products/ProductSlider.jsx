@@ -14,7 +14,7 @@ const ProductSlider = () => {
 
   return (
     <div>
-      <div className="py-20 px-20 flex max-w-7">
+      <div className="py-20 px-5 lg:px-20 flex lg:max-w-7">
         <motion.div
           ref={carousel}
           whileTap={{ cursor: "grabbing" }}

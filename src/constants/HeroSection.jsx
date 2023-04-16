@@ -12,7 +12,7 @@ export const IMAGE_URLS = [
   {
     url: head2,
     title: "Welcome TenTwenty Adventures",
-    text: "Our Sustainable Farms To Your Doorstep",
+    text: "Our Farms To Your Doorstep",
   },
   {
     url: head3,

@@ -7,7 +7,7 @@ const Slides = ({ image, index }) => {
     <div>
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className={`relative  min-w-[370px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
+        className={`relative min-w-[220px] xs:min-w-[270px] lg:min-w-[370px] h-[350px] sm:h-[550px] lg:h-[650px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
       >
         <img
           src={image}
