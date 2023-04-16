@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import styles from "../../../styles";
 import { TypingText } from "../../utils/TypingText";
 import { fadeIn, staggerContainer } from "../../utils/motion";
+import ProductSlider from "./ProductSlider";
 
 const About = () => (
   <section className={`${styles.paddings} justify-center relative z-10`}>
@@ -27,6 +28,7 @@ const About = () => (
         commodo consequat.
       </motion.p>
     </motion.div>
+    <ProductSlider />   
   </section>
 );
 
